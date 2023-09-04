@@ -20,7 +20,7 @@ namespace NZWalks.API.Repositories
 
         {
             var localFilePath = Path.Combine(webHostEnvironment.ContentRootPath, "Images",
-                image.FileName, image.FileExtension);
+                $"{image.FileName}{image.FileExtension}");
 
             // Upload Image to Local Path
 
